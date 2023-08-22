@@ -14,7 +14,7 @@
 import { html, LitElement } from 'lit';
 import { customElement, property, state, query } from 'lit/decorators.js';
 import style from './opc-feedback.scss';
-import { defaultApplication, defaultTemplate } from './defaultTemplate';
+import { defaultTemplate } from './defaultTemplate';
 import {
   arrowBackIcon,
   bugIcon,
@@ -31,7 +31,7 @@ export class OpcFeedback extends LitElement {
   @property({ type: String, attribute: 'docs' }) docs = '/get-started';
   @property({ reflect: true }) theme = 'red';
   @property({ type: Object }) template = defaultTemplate;
-  @property({ type: Object }) app = defaultApplication;
+  @property({ type: Object }) app = defaultTemplate.app;
   @state()
   _openConfirmationModal = false;
   @state()

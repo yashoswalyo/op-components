@@ -1,6 +1,10 @@
 import { excellentIcon, goodIcon, needsImprovementIcon } from "./assets";
 
 export const defaultTemplate = {
+  app: {
+    name: 'one platform', 
+    url: '/'
+  },
   feedbackFAB: 'Send Feedback',
   dialogTitle: 'Share your thoughts with us',
   bugReportTitle: 'Report Bug',
@@ -44,8 +48,3 @@ export const defaultTemplate = {
     name: 'Other'
   }]
 } as TemplateView;
-
-export const defaultApplication: Application = {
-  name: 'one platform',
-  url: '/'
-}

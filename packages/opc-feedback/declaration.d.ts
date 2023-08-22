@@ -11,7 +11,13 @@ type ExperienceList = {
   assetUrl: string;
 }
 
+type Application = {
+  name?: string;
+  url?: string;
+}
+
 type TemplateView = {
+  app:Application;
   feedbackFAB: string;
   dialogTitle: string;
   bugReportTitle: string;
@@ -32,7 +38,3 @@ type TemplateView = {
   errorList: ErrorList[];
 }
 
-type Application = {
-  name?: string;
-  url?: string;
-}
